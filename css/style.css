@@ -4,7 +4,17 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+  @keyframes example {
+    from { background-color: #1e1e1e; }  /* Warna awal */
+    to   { background-color: #381231; }  /* Warna akhir */
+  }
+
+  @keyframes example1 {
+    from { background-color: #2c2c2c; }  /* Warna awal */
+    to   { background-color: #4b3748; }  /* Warna akhir */
+  }
+
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -17,24 +27,32 @@
   header {
     background-color: #1f1f1f;
     padding: 10px 0;
+    top: 0;
+    left: 0;
     margin-bottom: 20px;
+    position: fixed;
+    width: 100%; /* Agar lebar header mencakup seluruh layar */
+    z-index: 1000; /* Menempatkan header di atas elemen lainnya */
   }
-  
-  nav span {
-    color: #f1f1f1;
-    margin: 0 15px;
-    cursor: pointer;
+
+  nav a {
+    margin: 0 25px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
     font-weight: bold;
+    position : sticky;
+    top: 0;
   }
   
-  nav span:hover {
-    text-decoration: underline;
-    color: #00adb5;
+  nav a:hover {
+    color: #f0a500; /* Warna saat hover */
   }
   
   /* Main content */
   main {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
   }
   
   main h3 {
@@ -61,6 +79,7 @@
   
   /* Artikel kompetisi */
   article {
+    animation: example 5s infinite alternate;
     background-color: #121212; 
     border: 1px solid #333;
     padding: 20px;
@@ -86,6 +105,7 @@
   
   /* Formulir */
   form {
+    animation: example 5s infinite alternate;
     background-color: #1e1e1e;
     border: 1px solid #333;
     color: #f1f1f1;
@@ -107,6 +127,7 @@
     background-color: #2c2c2c;
     color: #f1f1f1;
     border: 1px solid #444;
+    animation: example1 5s infinite alternate;
   }
   
   form button {
@@ -125,6 +146,7 @@
   
   /* Footer */
   footer {
+    animation: example 5s infinite alternate;
     margin-top: 40px;
     padding: 20px;
     background-color: #1f1f1f;
@@ -146,6 +168,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 10px;
+    
   }
   
   .kompetisi-container section {
@@ -180,4 +203,7 @@
     object-fit: cover;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   }
-  
+
+  html {
+    scroll-behavior: smooth;
+  }
