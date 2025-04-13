@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
   }
 
   @keyframes example {
@@ -16,7 +16,7 @@
   }
 
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';
     line-height: 1.6;
     background-color: #121212; /* Warna hitam gelap */
     color: #f1f1f1; /* Teks putih terang */
@@ -41,7 +41,6 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
-    position : sticky;
     top: 0;
   }
   
