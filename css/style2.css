@@ -5,6 +5,26 @@
     
   }
 
+  /* Breakpoint Tablet (600px - 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk tablet */
+  }
+  body {
+    font-size: 16px; /* Ukuran font lebih besar daripada mobile */
+  }
+}
+
+/* Breakpoint Mobile (< 600px) */
+@media (max-width: 599px) {
+  .container {
+    grid-template-columns: 1fr; /* Satu kolom untuk mobile */
+  }
+  body {
+    font-size: 14px; /* Ukuran font lebih kecil untuk mobile */
+  }
+}
+
   @keyframes example {
     from { background-color: #1e1e1e; }  /* Warna awal */
     to   { background-color: #381231; }  /* Warna akhir */
@@ -20,6 +40,13 @@
     line-height: 1.6;
     background-color: #121212; /* Warna hitam gelap */
     color: #f1f1f1; /* Teks putih terang */
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom untuk desktop */
+    gap: 20px;
+    padding: 20px;
   }
   
   /* Navigasi */
@@ -59,7 +86,7 @@
     margin-bottom: 10px;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 0.5fr;
     gap: 30px;
     align-items: flex-start;
     padding: 20px;
