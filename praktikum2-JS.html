@@ -1,0 +1,155 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Achmad Ainul Yaqin</title>
+  <link rel="stylesheet" href="css/style2JS.css">
+</head>
+
+<body>
+    <header>
+      <nav class="nav-container">
+        <a href="#home" data-icon="fas fa-home">Home</a>
+        <a href="#about" data-icon="fas fa-user">About</a>
+        <a href="#projects" data-icon="fas fa-folder-open">Projects</a>
+        <a href="#contact" data-icon="fas fa-envelope">Contact</a>
+      </nav>
+      
+    </header>
+    
+    <main id="home">
+        <div class="profil-text">
+        <h3>ACHMAD AINUL YAQIN</h3>
+        <p>
+            Hi, saya Seorang mahasiswa Sistem Informasi UISI yang memiliki passion dalam bidang desain grafis,
+             pengembangan perangkat lunak, dan video editing. Saya memiliki pengalaman dalam mengikuti 
+             berbagai kompetisi, terutama di bidang desain infografis dan produksi video. Selain itu, 
+             saya juga tertarik untuk terus mengembangkan keterampilan dalam teknologi dan desain, 
+             serta selalu mencari peluang baru untuk belajar dan berinovasi.
+        </p>
+        <p>
+            Di portofolio ini, Anda akan menemukan beberapa karya saya yang
+             mencerminkan keterampilan dan kreativitas dalam bidang yang saya geluti. 
+             Terima kasih telah mengunjungi portofolio saya!
+        </p>
+        <aside>
+            <h3>Keahlian</h3>
+            <ul>
+              <li>Adobe Photoshop</li>
+              <li>Figma</li>
+              <li>HTML & CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="profil-image">
+            <img src="assets/foto.png" alt="Foto Achmad Ainul Yaqin" />
+          </div>
+    </main>
+    
+    <article id="projects">
+        <h2>Pengalaman Kompetisi</h2>
+        <div class="kompetisi-container">
+          <section>
+            <h3>Desain Grafis</h3>
+            <p>Saya telah mengikuti berbagai kompetisi desain grafis, termasuk lomba infografis tingkat nasional...</p>
+          </section>
+          <section>
+            <h3>Video Editing</h3>
+            <p>Saya juga memiliki pengalaman dalam lomba video editing, salah satunya adalah pembuatan video dokumenter...</p>
+          </section>
+          <section>
+            <h3>Penghargaan</h3>
+            <p>Beberapa penghargaan yang saya raih antara lain juara 1 lomba infografis dan finalis lomba video editing tingkat nasional...</p>
+          </section>
+        </div>
+      </article>
+      
+    <section class="media-section">
+        <h2>Video</h2>
+        <video controls>
+            <source src="assets/videoplayback.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutaran video.
+        </video>
+    </section>
+
+    <section class="media-section">
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="assets/FUR - If You Know That I'm Lonely (Official Video).mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung pemutaran audio.
+        </audio>
+    </section>
+
+    <section class="media-section">
+      <h2>Gallery foto</h2>
+      <div class="gallery">
+        <img src="assets/foto1.PNG" alt="Foto 1">
+        <img src="assets/foto2.PNG" alt="Foto 2">
+        <img src="assets/foto3.PNG" alt="Foto 3">
+        <img src="assets/foto4.PNG" alt="Foto 4">
+        <img src="assets/foto5.PNG" alt="Foto 5">
+      </div>
+  </section>
+
+  <section id="about"> 
+    <h2>Hubungi Saya</h2>
+    <form>
+      <label for="contact-nama">Nama:</label><br>
+      <input type="text" id="contact-nama" name="nama" required><br><br>
+  
+      <label for="contact-email">Email:</label><br>
+      <input type="email" id="contact-email" name="email" required><br><br>
+  
+      <label for="contact-pesan">Pesan:</label><br>
+      <textarea id="contact-pesan" name="pesan" rows="4" required></textarea><br><br>
+  
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+  
+
+    <article id="bukutamu">
+      <h2>Buku Tamu</h2>
+      <div class="bukutamu-container">
+        <section class="form-section">
+          <h3>Formulir Tamu</h3>
+          <form id="formBukuTamu">
+            <label for="guest-nama">Nama:</label><br>
+            <input type="text" id="guest-nama" name="nama" required><br><br>
+
+            <label for="guest-alamat">Alamat:</label><br>
+            <input type="text" id="guest-alamat" name="alamat" required><br><br>
+
+            <button type="submit">Kirim</button>
+          </form>
+        </section>
+    
+        <section class="daftar-section">
+          <h3>Daftar Hadir</h3>
+          <div id = daftarHadir>
+            
+          </div>
+        </section>
+      </div>
+    </article>
+    
+    <footer id="contact">
+      <div>
+        <h3>Kontak</h3>
+        <p>Email: ainulyaqin@example.com</p>  
+      </div>
+      <div>&copy; 2025 Achmad Ainul Yaqin</div> 
+    </footer>
+    <script src="javascript/bukutamu.js"></script>
+  </body>
+
+</html>
