@@ -72,6 +72,7 @@ const form = document.getElementById("formBukuTamu");
                 showCancelButton: true,
                 confirmButtonText: 'Ya, Hapus!',
                 cancelButtonText: 'Batal',
+               
             }).then((result) => {
                 if (result.isConfirmed) {
                     // Ambil data dari localStorage
