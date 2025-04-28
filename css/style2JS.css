@@ -41,6 +41,7 @@
     z-index: 1000; /* Menempatkan header di atas elemen lainnya */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     display: flex;
+    animation: example 5s infinite alternate;
   }
 
   .nav-container {
@@ -262,13 +263,19 @@
 }
 
 .item {
+  animation: example1 5s infinite alternate;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #2c2c2c;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 15px;
+}
+
+.item.selesai {
+  animation: none;
+  background-color: #606060; /* warna item kalau sudah selesai */
 }
 
 .info-wrapper {
@@ -287,7 +294,7 @@
   color: #aaa;
 }
 
-.selesai {
+.nama-alamat.selesai {
   text-decoration: line-through;
   color: #aaa;
 }

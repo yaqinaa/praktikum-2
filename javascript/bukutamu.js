@@ -16,6 +16,7 @@ const form = document.getElementById("formBukuTamu");
                 // Teks nama tamu
                 const span = document.createElement("span");
                 span.textContent = `${tamu.nama} - ${tamu.alamat}`;
+                span.classList.add("nama-alamat");
             
                 // Waktu hadir
                 const waktuSpan = document.createElement("span");
@@ -24,7 +25,7 @@ const form = document.getElementById("formBukuTamu");
             
                 if (tamu.selesai) {
                     span.classList.add("selesai");
-                    item.style.backgroundColor = "#606060";
+                    item.classList.add("selesai");
                 }
             
                 infoWrapper.appendChild(span);
