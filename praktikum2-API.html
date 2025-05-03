@@ -9,7 +9,7 @@ Online HTML, CSS and JavaScript editor to run code online.
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Achmad Ainul Yaqin</title>
-  <link rel="stylesheet" href="css/style2JS.css">
+  <link rel="stylesheet" href="css/style2API.css">
 </head>
 
 <body>
@@ -22,8 +22,15 @@ Online HTML, CSS and JavaScript editor to run code online.
       </nav>
       
     </header>
+
+    <section id="cuaca">
+      <div class="lokasi" id="location">Mendeteksi lokasi...</div>
+      <div class="cuaca" id="weather-info">Mengambil cuaca...</div>
+    </section>
     
+
     <main id="home">
+      
         <div class="profil-text">
         <h3>ACHMAD AINUL YAQIN</h3>
         <p>
@@ -88,16 +95,27 @@ Online HTML, CSS and JavaScript editor to run code online.
         </audio>
     </section>
 
-    <section class="media-section">
+    <article id="gallery">
       <h2>Gallery foto</h2>
-      <div class="gallery">
-        <img src="assets/foto1.PNG" alt="Foto 1">
-        <img src="assets/foto2.PNG" alt="Foto 2">
-        <img src="assets/foto3.PNG" alt="Foto 3">
-        <img src="assets/foto4.PNG" alt="Foto 4">
-        <img src="assets/foto5.PNG" alt="Foto 5">
+      <div class=" gallery-container">
+        <section class="media-section">
+          <h2>Gallery lokal</h2>
+          <div class="gallery-lokal">
+            <img src="assets/foto1.PNG" alt="Foto 1">
+            <img src="assets/foto2.PNG" alt="Foto 2">
+            <img src="assets/foto3.PNG" alt="Foto 3">
+            <img src="assets/foto4.PNG" alt="Foto 4">
+            <img src="assets/foto5.PNG" alt="Foto 5">
+          </div>
+        </section>
+
+        <section class="media-section">
+          <h3>Gambar dari API</h3>
+          <img id="unsplashImage" src="" alt="Gambar dari Unsplash">
+          <button onclick="loadImage()">Ganti Gambar</button>
+        </section>
       </div>
-  </section>
+    </article>
 
   <article id="bukutamu">
     <h2>Buku Tamu</h2>
@@ -117,9 +135,7 @@ Online HTML, CSS and JavaScript editor to run code online.
   
       <section class="daftar-section">
         <h3>Daftar Hadir</h3>
-        <div id = daftarHadir>
-          
-        </div>
+        <div id = daftarHadir></div>
       </section>
     </div>
   </article>
@@ -148,6 +164,8 @@ Online HTML, CSS and JavaScript editor to run code online.
       <div>&copy; 2025 Achmad Ainul Yaqin</div> 
     </footer>
     <script src="javascript/bukutamu.js"></script>
+    <script src="javascript/weather_API.js"></script>
+    <script src="javascript/photo_API.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 
