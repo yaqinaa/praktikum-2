@@ -61,7 +61,7 @@ function getWeather(lat, lon) {
                     }
     
                     document.getElementById('location').innerHTML = `
-                        <div class="temp">Lokasi: anda</div>
+                        <div class="temp">Lokasi anda</div>
                         <div class="desc">${displayCity}</div>
                     `;
                 } else {
