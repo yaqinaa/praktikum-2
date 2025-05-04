@@ -1,7 +1,7 @@
-const ACCESS_KEY = "usvpbC39RonDaR6JyXFmcv1MWpbXhRFD-nSUeKUID0U"; // <- ganti dengan API key kamu
+const ACCESS_KEY = "usvpbC39RonDaR6JyXFmcv1MWpbXhRFD-nSUeKUID0U"; // <- API key
 
 function loadImage() {
-    fetch(`https://api.unsplash.com/photos/random?query=design&orientation=squarish&client_id=${ACCESS_KEY}`)
+    fetch(`https://api.unsplash.com/photos/random?query=programming&orientation=squarish&client_id=${ACCESS_KEY}`)
       .then(res => res.json())
       .then(data => {
         const imageUrl = data.urls.regular;
